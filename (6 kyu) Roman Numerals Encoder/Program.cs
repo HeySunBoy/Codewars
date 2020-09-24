@@ -71,25 +71,17 @@ namespace _6_kyu__Roman_Numerals_Encoder
 
         public static string Symbol(string n)
         {
-            switch (Convert.ToInt32(n))
+            return (Convert.ToInt32(n)) switch
             {
-                case 1:
-                    return "I";
-                case 5:
-                    return "V";
-                case 10:
-                    return "X";
-                case 50:
-                    return "L";
-                case 100:
-                    return "C";
-                case 500:
-                    return "D";
-                case 1000:
-                    return "M";
-                default:
-                    return "";
-            }
+                1 => "I",
+                5 => "V",
+                10 => "X",
+                50 => "L",
+                100 => "C",
+                500 => "D",
+                1000 => "M",
+                _ => "",
+            };
         }
     }
 }
