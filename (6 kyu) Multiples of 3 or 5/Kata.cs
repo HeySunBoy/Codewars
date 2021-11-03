@@ -2,11 +2,10 @@
 
 public static class Kata
 {
-
     public static int Solution(int value)
     {
         int result = 0;
-        if (value < 0)
+        if (value <= 0)
         {
         }
         else
